@@ -2,14 +2,13 @@
 * @Author: fhc
 * @Date:   2015-11-19 12:23:08
 * @Last Modified by:   fhc
-* @Last Modified time: 2015-11-19 12:53:25
+* @Last Modified time: 2015-11-19 13:17:49
 */
 
 
 /* 圆形，radius等于宽高的一半，或者 50% */
 
 div {
-    float: left;
     margin: 1rem;
 }
 
@@ -83,4 +82,50 @@ div {
     height: 0;
     border-bottom: 100px solid red;
     border-left: 100px solid transparent;
+}
+
+
+/* 梯形 */
+
+.trapezoid {
+    border-bottom: 50px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 200px;
+}
+
+
+/* 平行四边形 */
+
+.parallelogram {
+    width: 150px;
+    height: 100px;
+    -webkit-transform: skew(40deg);
+    transform: skew(40deg);
+    background: red;
+}
+
+
+/* 对话框 */
+
+.talk-bubble {
+    height: 80px;
+    padding: 1rem;
+    color: white;
+    background: #FDAF83;
+    position: relative;
+    border-radius: 10px;
+}
+
+.talk-bubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 26px;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #FDAF83;
+    border-bottom: 13px solid transparent;
 }

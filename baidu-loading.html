@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>百度的 loading 动画效果实现</h1>
+
+
+        <style>
+        .cc-baidu-loading {
+            border: 1px solid #ccc;
+            padding: 3rem;
+            overflow: hidden;
+        }
+        
+        .cc-baidu-loading span {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 2rem;
+            opacity: 0.8;
+        }
+        
+        .item-1 {
+            background: red;
+            -webkit-animation: swing-1 2s ease-in-out infinite;
+            animation: swing-1 2s ease-in-out infinite;
+        }
+        
+        @-webkit-keyframes swing-1 {
+            50% {
+                -webkit-transform: translate(90px);
+                transform: translate(90px);
+            }
+        }
+        
+        @keyframes swing-1 {
+            50% {
+                -webkit-transform: translate(90px);
+                transform: translate(90px);
+            }
+        }
+        
+        @-webkit-keyframes swing-2 {
+            50% {
+                -webkit-transform: translate(-90px);
+                transform: translate(-90px);
+            }
+        }
+        
+        @keyframes swing-2 {
+            50% {
+                -webkit-transform: translate(-90px);
+                transform: translate(-90px);
+            }
+        }
+        
+        .item-2 {
+            background: green;
+        }
+        
+        .item-3 {
+            background: blue;
+            -webkit-animation: swing-2 2s ease-in-out infinite;
+            animation: swing-2 2s ease-in-out infinite;
+        }
+        </style>
+
+        <div class="cc-baidu-loading">
+            <span class="item-1"></span>
+            <span class="item-2"></span>
+            <span class="item-3"></span>
+        </div>
+    </div>
+
+</body>
+
+</html>
